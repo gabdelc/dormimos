@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dormir </title>
+	<style type="text/css">
+        *{ text-align: center; margin-bottom: 2%;}
+        h3{ color: blueviolet; }
+        select{width: 15%; margin-top: 1%;}
+    </style> 
+
+</head>
+<body>
+
+	<h3>¿ Hoy puedo dormir?</h3>
+    <div class="formulario">
+        <label for="dia">Que dia es?</label>
+        <br>
+        <select  id="dia">
+           <option value="1">Lunes</option>
+           <option value="2">Martes</option>
+           <option value="3">Miercoles</option>
+           <option value="4">Jueves</option>
+           <option value="5">Viernes</option>
+           <option value="6">Sabado</option>
+           <option value="7">Domingo</option>
+        </select>
+    </div>
+    <div class="formulario">
+        <label for="vacaciones"> ¿Estas de vacaciones?</label>
+        <br>
+        <select id="vacaciones">
+            <option value="1">Si</option>
+            <option value="2">No</option>
+        </select>
+    </div>
+    <div>
+        <button onclick="calcular()"> Calcular </button>
+    </div>
+    <div>
+        <h3>Dias de sueño</h3>
+        <h1 id="salida"></h1>
+        
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
